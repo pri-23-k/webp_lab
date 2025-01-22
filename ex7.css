@@ -1,0 +1,61 @@
+h1{
+    background-image: linear-gradient(violet,indigo,blue,green,yellow,orange,red);
+    color: transparent; 
+    background-clip: text;
+    
+}
+body{
+    background-image: url(https://img.freepik.com/premium-vector/cute-cat-wallpaper-background-pastel-colour_493693-264.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.description {
+    margin: 20px auto;
+    column-count: 3;
+    column-gap: 20px;
+    line-height: 30pt;
+    max-width: 800px;
+}
+
+.play-area {
+    position: relative;
+    margin-top: 40px;
+    height: 200px;
+}
+
+/* Dog Image */
+.dog {
+    position: absolute;
+    left: 45%;
+    bottom: -23px;
+    width: 150px;
+}
+
+#ball {
+    position: relative;
+    
+    left: 40%;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    animation: playBall 4s infinite ease-in-out;
+}
+
+@keyframes playBall {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(50px) rotate(45deg) skew(10deg, 5deg);
+    }
+    50% {
+        transform: translateX(100px) rotate(90deg);
+    }
+    75% {
+        transform: translateX(50px) rotate(135deg) skew(-10deg, -5deg);
+    }
+    100% {
+        transform: translateX(0) rotate(180deg);
+    }
+}
